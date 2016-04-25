@@ -3,7 +3,7 @@ SugarCRM REST Client For SugarCRM 7
 
 License: MIT
 
-Special thanks to (Sean Pinegar)[https://github.com/spinegar/sugarcrm7-api-wrapper-class] for the original.
+Special thanks to [Sean Pinegar](https://github.com/spinegar/sugarcrm7-api-wrapper-class) for the original.
 
 Contents
 --------
