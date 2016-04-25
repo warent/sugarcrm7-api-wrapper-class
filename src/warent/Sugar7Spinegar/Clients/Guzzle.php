@@ -1,4 +1,4 @@
-<?php namespace Spinegar\Sugar7Wrapper\Clients;
+<?php namespace warent\Sugar7Spinegar\Clients;
 
 use Guzzle\Common\Event;
 use Guzzle\Http\Client;

@@ -1,10 +1,10 @@
 {
-    "name": "spinegar/sugar7wrapper",
+    "name": "warent/sugar7spinegar",
     "description": "SugarCRM 7 REST API Wrapper",
     "authors": [
         {
-            "name": "Sean Pinegar",
-            "email": "spinegar@gmail.com"
+            "name": "Wyatt Arent",
+            "email": "hello@wyatt.ninja"
         }
     ],
     "require": {
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Spinegar\\Sugar7Wrapper": "src/"
+            "warent\\Sugar7Spinegar": "src/"
         }
     },
     "minimum-stability": "dev"

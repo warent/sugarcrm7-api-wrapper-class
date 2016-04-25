@@ -25,7 +25,7 @@ Edit composer.json
 ```json
 {
 	"require": {
-		"spinegar/sugar7wrapper": "dev-master"
+		"warent/sugar7spinegar": "dev-master"
 	},
 	"minimum-stability": "dev"
 }
@@ -43,7 +43,7 @@ $ composer install
 
 ```php
 /* Instantiate and authenticate */
-$sugar = new \Spinegar\Sugar7Wrapper\Rest();
+$sugar = new \warent\Sugar7Spinegar\Rest();
 
 $sugar->setUrl('https://sugar/rest/v10/')
 	->setUsername('restUser')
@@ -63,13 +63,13 @@ $sugar->search('Cases');
 /* Retrieve all records in the Cases module where the name = 'Case1 Name' or 'Case2 Name' */
 $sugar->search('Cases', array(
 	'q' => '"Case1 Name" "Case2 Name"'
-)); 
+));
 
 /* Retrieve the name field for all records in the Cases module */
 $sugar->search('Cases', array(
 	'fields' => 'name'
-)); 
-	
+));
+
 /* Retrieve all records with filter params in the Contacts module */
 $sugar->filter('Contacts', array(
     'filter' => array(
@@ -171,6 +171,6 @@ $sugar->deleteEndpoint('MyCustomEndpoint', $parameters);
 If you are having trouble connecting to a secured site (https), try the following:
 
 ```php
-$sugar = new \Spinegar\Sugar7Wrapper\Rest();
+$sugar = new \warent\Sugar7Spinegar\Rest();
 $sugar->setClientOption('verify', false); // This is the important part
 ```

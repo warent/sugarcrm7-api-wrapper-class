@@ -1,6 +1,6 @@
-<?php namespace Spinegar\Sugar7Wrapper;
+<?php namespace warent\Sugar7Spinegar;
 
-use Spinegar\Sugar7Wrapper\Clients\Guzzle;
+use warent\Sugar7Spinegar\Clients\Guzzle;
 
 /**
  * SugarCRM 7 Rest Wrapper
@@ -17,7 +17,7 @@ class Rest {
   protected $client;
   /**
   * Function: __construct()
-  * Parameters:   none    
+  * Parameters:   none
   * Description:  Construct Class
   * Returns:  VOID
   */
@@ -25,10 +25,10 @@ class Rest {
   {
     $this->client = new Guzzle;
   }
-  
+
   /**
   * Function: connect()
-  * Parameters:   none    
+  * Parameters:   none
   * Description:  Authenticate and set the oAuth 2.0 token
   * Returns:  TRUE on login success, otherwise FALSE
   */
@@ -39,7 +39,7 @@ class Rest {
 
   /**
   * Function: check()
-  * Parameters:   none    
+  * Parameters:   none
   * Description:  Check if authenticated
   * Returns:  TRUE if authenticated, otherwise FALSE
   */
@@ -50,7 +50,7 @@ class Rest {
 
  /**
   * Function: setClientOptions()
-  * Parameters:   $key = Guzzle option, $value = Value  
+  * Parameters:   $key = Guzzle option, $value = Value
   * Description:  Set Default options for the Guzzle client.
   * Returns:  returns $this
   */
@@ -63,7 +63,7 @@ class Rest {
 
   /**
   * Function: setUrl()
-  * Parameters:   $value = URL for the REST API    
+  * Parameters:   $value = URL for the REST API
   * Description:  Set $url
   * Returns:  returns $this
   */
@@ -86,7 +86,7 @@ class Rest {
 
   /**
   * Function: setUsername()
-  * Parameters:   $value = Username for the REST API User    
+  * Parameters:   $value = Username for the REST API User
   * Description:  Set $username
   * Returns:  returns $this
   */
@@ -99,7 +99,7 @@ class Rest {
 
   /**
   * Function: setPassword()
-  * Parameters:   none    
+  * Parameters:   none
   * Description:  Set $password
   * Returns:  returns $this
   */
@@ -112,7 +112,7 @@ class Rest {
 
   /**
   * Function: setPlatform()
-  * Parameters:   $value = platform for the REST API    
+  * Parameters:   $value = platform for the REST API
   * Description:  Set $platform
   * Returns:  returns $this
   */
@@ -136,7 +136,7 @@ class Rest {
   /**
   * Function: create()
   * Parameters:   $module = Record Type
-  *   $fields = Record field values    
+  *   $fields = Record field values
   * Description:  This method creates a new record of the specified type
   * Returns:  returns Array if successful, otherwise FALSE
   */
@@ -613,10 +613,10 @@ class Rest {
 
     return $request;
   }
-  
+
     /**
   * Function: me()
-  * Parameters: 
+  * Parameters:
   * Description:  This method retrieves current user
   * Returns:  Returns an Array if successful, otherwise FALSE
   */
